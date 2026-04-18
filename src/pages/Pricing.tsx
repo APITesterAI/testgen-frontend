@@ -33,7 +33,7 @@ const plans = [
       "Private projects",
       "Export to Postman, Jest, Pytest",
     ],
-    cta: "Start 14-day trial",
+    cta: "Upgrade to Pro",
     highlighted: true,
   },
   {
@@ -49,7 +49,7 @@ const plans = [
       "Custom integrations",
       "Dedicated success manager",
     ],
-    cta: "Contact sales",
+    cta: "Get Team plan",
     highlighted: false,
   },
 ];

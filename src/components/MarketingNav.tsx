@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
   { to: "/", label: "Home" },
@@ -59,7 +60,8 @@ export const MarketingNav = () => {
           })}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-2 md:flex">
+          <ThemeToggle />
           <Button asChild variant="ghost" size="sm">
             <Link to="/login">Sign in</Link>
           </Button>
@@ -67,6 +69,9 @@ export const MarketingNav = () => {
             <Link to="/signup">Get started</Link>
           </Button>
         </div>
+
+        <div className="flex items-center gap-1 md:hidden">
+          <ThemeToggle />
 
         <button
           type="button"

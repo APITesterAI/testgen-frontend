@@ -29,10 +29,10 @@ export const MarketingNav = () => {
         </nav>
         <div className="flex items-center gap-3">
           <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
-            <Link to="/dashboard">Sign in</Link>
+            <Link to="/login">Sign in</Link>
           </Button>
           <Button asChild variant="hero" size="sm">
-            <Link to="/upload">Get started</Link>
+            <Link to="/signup">Get started</Link>
           </Button>
         </div>
       </div>

@@ -21,21 +21,17 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        working-directory: ./testgen-frontend
         run: npm ci
 
       - name: Run linter
-        working-directory: ./testgen-frontend
         run: npm run lint
 
       - name: Debug
-        working-directory: ./testgen-frontend
         run: |
           ls -la
           file index.html
 
       - name: Build project
-        working-directory: ./testgen-frontend
         run: npm run build
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
